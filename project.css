@@ -1,0 +1,268 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	overflow-y: scroll;
+	font-family: sans-serif;
+	padding:0;
+	height:100%;
+	overflow-x: hidden;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+/*HEADER*/
+
+header {
+	padding: 20px;
+	background-color: #FFECAD;
+	/*margin-top: -10;*/
+	font-size: 14pt;
+}
+
+header #brand a {
+	color: black;
+	text-decoration: none;
+}
+
+#brand {
+	font-family: "Brush Script MT", cursive, sans-serif;
+	font-size: 40px;
+}
+
+#brand h1 {
+	margin: 10px;
+	margin-left: 60px;
+	margin-bottom: 0px;
+}
+
+#brand h3 {
+	margin: 10px;
+	margin-left: 300px;
+	margin-top: -5px;
+}
+
+/*Navbar*/
+nav {
+	background-color: #FF855C;
+}
+
+nav > ul {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	font-size: 14pt;
+}
+
+#navbar > li {
+	float: left;
+	margin: 0px;
+	width: 25%;
+}
+
+#navbar > li:last-child a {
+	border-right: 1px solid black;
+}
+
+.nav li a {
+	color: black;
+	text-align: center;
+	padding: 12px 14px;
+	text-decoration: none;
+	border-left: 1px solid black;
+	display: block;
+}
+
+#navbar > li a:hover {
+	background-color: #FF6A38;
+}
+
+#navbar > li a.active {
+	background-color: #FF3F3F;
+}
+
+/*Navbar dropdown menus*/
+
+.nav-menu {
+	display: none;
+	position: absolute;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #FF855C;
+}
+
+.nav-menu > li {
+	width: 100%;
+}
+
+.nav-menu li a {
+	border: none;
+}
+
+#navbar li:hover .nav-menu {
+	display: block;
+}
+
+/*PAGE CONTENT*/
+.page-content {
+	font-size: 13pt;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10px;
+	padding-bottom: 100px; 
+}
+
+.page-content h3 {
+	color: #FF3F3F;
+}
+
+#dancingImg {
+	text-align: center;
+}
+
+#dahliaImg {
+	float: left;
+	margin-right: 30px;
+}
+
+.under-header {
+	margin-left: 30px;
+	overflow: hidden;
+}
+
+/*Left Navbar*/
+
+.left-nav {
+	border: 2px solid black;
+	width: 35%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14pt;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-radius: 2px;
+	
+}
+
+.left-nav li a {
+	border: none;
+}
+
+.left-nav > ul {
+	list-style-type: none;
+	padding: 0;
+} 
+
+.left-nav li a:hover {
+	background-color: #FF6A38;
+}
+
+.left-nav li a.active {
+	background-color: #FF3F3F;
+}
+
+/*Content on right*/
+
+.right-content {
+	width: 56%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 30px;
+}
+
+.right-content h4 {
+	margin-bottom: 10px;
+	margin-top: 20px;
+	font-weight: normal;
+}
+
+.right-content h4:first-child {
+	margin-top: 10px;
+}
+
+/*SCHEDULE*/
+#groupSchedule, #groupSchedule th, #groupSchedule td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#groupSchedule th {
+	height: 40px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#groupSchedule td {
+	height: 30px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px 15px;
+}
+
+#groupSchedule tr:nth-child(even) {
+	background-color: #e6e6e6
+}
+
+/*REGISTER*/
+#secCode {
+	width: 80px;
+}
+
+#registerBtn {
+	background-color: #FF3F3F;
+	font-size: 14pt;
+	float: right;
+	border-radius: 2px;
+	padding: 10px 30px;
+}
+
+/*THANKS*/
+#thanks {
+	text-align: center;
+	margin: 70px;
+}
+
+/*FOOTER*/
+footer {
+	text-align: center;
+	background-color: #FF855C;
+	padding: 20px;
+	font-size: 10pt;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 30px;
+}
+
+/*GENERAL*/
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.caret {
+	font-size: 8pt;
+}
+
+input, textarea {
+	font-size: 13pt;
+	margin: 10px;
+	margin-left: 5px;
+	border: 1px solid black;
+	border-radius: 2px;
+}

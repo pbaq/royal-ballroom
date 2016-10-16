@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Priscilla Baquerizo
+15205774
+-->
+
+<html lang="en">
+	<head>
+		<title>Royal Ballroom | Pricing</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<script type="text/javascript" src="project.js"></script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="changeTextSize" class="float-right">
+					Change text size 
+					<input type="number" name="changetextsize" value="13" min="10" max="30" onchange="changeFontSize(this.value)">
+				</div>
+				<div id="brand">
+					<h1><a href="index.html">Royal Ballroom</a></h1>
+					<h3>Anyone can dance</h3>
+				</div>
+			</header>
+			
+			<nav>
+				<ul id="navbar" class="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About Us <span class="caret">&#9660;</span></a>
+						<ul id="aboutUsMenu" class="nav-menu">
+							<li><a href="aboutus.html">What is Royal Ballroom?</a></li>
+							<li><a href="team.html">Our Team</a></li>
+						</ul>
+					</li>
+					<li><a href="classes.html" class="active">Classes <span class="caret">&#9660;</span></a>
+						<ul id="classesMenu" class="nav-menu">
+							<li><a href="classes.html">Types of Classes</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="register.html">Register</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			
+			<div class="page-content">
+				<div class="left-nav">
+					<h2>Classes</h2>
+					<ul class="nav">
+						<li><a href="classes.html">Types of Classes</a></li>
+						<li><a href="pricing.html" class="active">Pricing</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="register.html">Register</a></li>
+					</ul>
+				</div>
+				
+				<div class="right-content">
+					<h3>Group Classes</h3>
+					<p class="under-header">
+						Per class: &euro;15<br>
+						Per month: &euro;50
+					</p>
+					<br>
+					<h3>Individual Classes</h3>
+					<p class="under-header">
+						Per class: &euro;20<br>
+						Per month: &euro;70
+					</p>
+				</div>
+			</div>
+			
+			<footer>
+				Royal Ballroom, Suite 301, Millin Road, Dublin 5 <br>
+				Copyright &copy; Royal Ballroom. All rights reserved.
+			</footer>
+		</div>
+	</body>
+</html>

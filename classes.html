@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Priscilla Baquerizo
+15205774
+-->
+
+<html lang="en">
+	<head>
+		<title>Royal Ballroom | Classes</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<script type="text/javascript" src="project.js"></script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="changeTextSize" class="float-right">
+					Change text size 
+					<input type="number" name="changetextsize" value="13" min="10" max="30" onchange="changeFontSize(this.value)">
+				</div>
+				<div id="brand">
+					<h1><a href="index.html">Royal Ballroom</a></h1>
+					<h3>Anyone can dance</h3>
+				</div>
+			</header>
+			
+			<nav>
+				<ul id="navbar" class="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About Us <span class="caret">&#9660;</span></a>
+						<ul id="aboutUsMenu" class="nav-menu">
+							<li><a href="aboutus.html">What is Royal Ballroom?</a></li>
+							<li><a href="team.html">Our Team</a></li>
+						</ul>
+					</li>
+					<li><a href="classes.html" class="active">Classes <span class="caret">&#9660;</span></a>
+						<ul id="classesMenu" class="nav-menu">
+							<li><a href="classes.html">Types of Classes</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="register.html">Register</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			
+			<div class="page-content">
+				<div class="left-nav">
+					<h2>Classes</h2>
+					<ul class="nav">
+						<li><a href="classes.html" class="active">Types of Classes</a></li>
+						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="register.html">Register</a></li>
+					</ul>
+				</div>
+				
+				<div class="right-content">
+					<h3>Group Classes</h3>
+					<p class="under-header">
+						The size of group classes ranges from 10 to 16 students. 
+						These are not ideal for students with very specific needs,
+						as the larger class does not allow for personalized attention.<br>
+						We have 3 different levels of classes:
+					</p>
+					<ul class="under-header">
+						<li><strong>Beginner:</strong> These are for students with no
+						experience in dancing or less than a year of experience. We start
+						with the basics and go up from there.</li>
+						<li><strong>Intermediate:</strong> These are for students with
+						one or two years of experience. We work on increasing technical
+						ability and start on more complex aspects.</li>
+						<li><strong>Expert:</strong> These are for students with more than 
+						three years of experience. We primarily work on learning new dances
+						and honing the skills students already have.</li>
+					</ul>
+					<br>
+					<h3>Individual Classes</h3>
+					<p class="under-header">
+						Individual classes are provided for students of all
+						dance levels. You can sign up to have a lesson on 
+						your own or with a partner. <br>
+						These classes are more personalized to the needs of the 
+						students because of the one-on-one attention.
+					</p>
+				</div>
+			</div>
+			
+			<footer>
+				Royal Ballroom, Suite 301, Millin Road, Dublin 5 <br>
+				Copyright &copy; Royal Ballroom. All rights reserved.
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+Priscilla Baquerizo
+15205774
+-->
+
+<html lang="en">
+	<head>
+		<title>Royal Ballroom | Schedule</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<script type="text/javascript" src="project.js"></script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="changeTextSize" class="float-right">
+					Change text size 
+					<input type="number" name="changetextsize" value="13" min="10" max="30" onchange="changeFontSize(this.value)">
+				</div>
+				<div id="brand">
+					<h1><a href="index.html">Royal Ballroom</a></h1>
+					<h3>Anyone can dance</h3>
+				</div>
+			</header>
+			
+			<nav>
+				<ul id="navbar" class="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About Us <span class="caret">&#9660;</span></a>
+						<ul id="aboutUsMenu" class="nav-menu">
+							<li><a href="aboutus.html">What is Royal Ballroom?</a></li>
+							<li><a href="team.html">Our Team</a></li>
+						</ul>
+					</li>
+					<li><a href="classes.html" class="active">Classes <span class="caret">&#9660;</span></a>
+						<ul id="classesMenu" class="nav-menu">
+							<li><a href="classes.html">Types of Classes</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="register.html">Register</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			
+			<div class="page-content">
+				<div class="left-nav">
+					<h2>Classes</h2>
+					<ul class="nav">
+						<li><a href="classes.html">Types of Classes</a></li>
+						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="schedule.html" class="active">Schedule</a></li>
+						<li><a href="register.html">Register</a></li>
+					</ul>
+				</div>
+				
+				<div class="right-content">
+					<h3>Group Classes</h3>
+					<p class="under-header">
+						We have different times available for our group classes
+						so that students can attend the one that best fits their
+						schedule. You should only attend one class per week.
+					</p>
+					<table id="groupSchedule" class="under-header">
+						<tr>
+							<th>Level</th>
+							<th>Day</th>
+							<th>Time</th>
+						</tr>
+						<tr>
+							<td rowspan="3">Beginner</td>
+							<td>Monday</td>
+							<td>10am - 11:30am</td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td>3pm - 4:30pm</td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td>4:45pm - 6:15pm</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Intermediate</td>
+							<td>Tuesday</td>
+							<td>3pm - 4:30pm</td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td>10am - 11:30am</td>
+						</tr>
+						<tr>
+							<td>Friday</td>
+							<td>4:45pm - 6:15pm</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Expert</td>
+							<td>Monday</td>
+							<td>3pm - 4:30pm</td>
+						</tr>
+						<tr>
+							<td>Tuesday</td>
+							<td>10am - 11:30am</td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td>4:45pm - 6:15pm</td>
+						</tr>
+					</table>
+					<br>
+					<br>
+					<h3>Individual Classes</h3>
+					<p class="under-header">
+						We work with our students to find a day and time that 
+						suits them. You can call, email, or talk to our
+						receptionist in person to schedule your class.
+					</p>
+				</div>
+			</div>
+			
+			<footer>
+				Royal Ballroom, Suite 301, Millin Road, Dublin 5 <br>
+				Copyright &copy; Royal Ballroom. All rights reserved.
+			</footer>
+		</div>
+	</body>
+</html>

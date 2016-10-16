@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+Priscilla Baquerizo
+15205774
+-->
+
+<html lang="en">
+	<head>
+		<title>Royal Ballroom</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<script type="text/javascript" src="project.js"></script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="changeTextSize" class="float-right">
+					Change text size 
+					<input type="number" name="changetextsize" value="13" min="10" max="30" onchange="changeFontSize(this.value)">
+				</div>
+				<div id="brand">
+					<h1><a href="index.html">Royal Ballroom</a></h1>
+					<h3>Anyone can dance</h3>
+				</div>
+			</header>
+			
+			<nav>
+				<ul id="navbar" class="nav">
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="aboutus.html">About Us <span class="caret">&#9660;</span></a>
+						<ul id="aboutUsMenu" class="nav-menu">
+							<li><a href="aboutus.html">What is Royal Ballroom?</a></li>
+							<li><a href="team.html">Our Team</a></li>
+						</ul>
+					</li>
+					<li><a href="classes.html">Classes <span class="caret">&#9660;</span></a>
+						<ul id="classesMenu" class="nav-menu">
+							<li><a href="classes.html">Types of Classes</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="register.html">Register</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			
+			<div class="page-content">
+				<p id="dancingImg">
+					<img src="images/dancing.jpg" alt="Dancing couple" width="628" height="346">
+				</p>
+				<h3>What is Royal Ballroom?</h3>
+				<p class="under-header">
+					Royal Ballroom is a ballroom dancing school for people
+					aged over 75. We aim to transform the lives of our students
+					by helping them be more active, form lasting bonds, and 
+					have a lot of fun!
+				</p>
+				<h3>What is Ballroom Dancing?</h3>
+				<p class="under-header">
+					Ballroom dancing is done in couples. It includes waltz, 
+					tango, rumba, quickstep, and many others.
+				</p>
+				<h3>Dancer of the Week</h3>
+				<div class="under-header">
+					<img id="dahliaImg" src="images/Dahlia.jpg" alt="Dahlia McLoughlin" width="154" height="200">
+					<p>
+						Dahlia McLoughlin started dancing with us five months ago. 
+						Her kids convinced her and her husband William to try 
+						ballroom dancing after they retired. Now they are an 
+						active part of our classes and are preparing for the annual
+						Ballroom Competition this coming September. Good luck to
+						you both!
+					</p>
+					
+					<p>In Dahlia's words:</p>
+					
+					<blockquote>
+						&quot;I got tired of seeing my 
+						husband lie around doing nothing after he retired. Now we
+						both dance and we love it! It has made us closer to each other,
+						our grandkids love seeing us dance, and it's great exercise!&quot;
+					</blockquote>
+					
+				</div>
+			</div>
+			
+			<footer>
+				Royal Ballroom, Suite 301, Millin Road, Dublin 5 <br>
+				Copyright &copy; Royal Ballroom. All rights reserved.
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+Priscilla Baquerizo
+15205774
+-->
+
+<html lang="en">
+	<head>
+		<title>Royal Ballroom | Register</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<script type="text/javascript" src="project.js"></script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="changeTextSize" class="float-right">
+					Change text size 
+					<input type="number" name="changetextsize" value="13" min="10" max="30" onchange="changeFontSize(this.value)">
+				</div>
+				<div id="brand">
+					<h1><a href="index.html">Royal Ballroom</a></h1>
+					<h3>Anyone can dance</h3>
+				</div>
+			</header>
+			
+			<nav>
+				<ul id="navbar" class="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About Us <span class="caret">&#9660;</span></a>
+						<ul id="aboutUsMenu" class="nav-menu">
+							<li><a href="aboutus.html">What is Royal Ballroom?</a></li>
+							<li><a href="team.html">Our Team</a></li>
+						</ul>
+					</li>
+					<li><a href="classes.html" class="active">Classes <span class="caret">&#9660;</span></a>
+						<ul id="classesMenu" class="nav-menu">
+							<li><a href="classes.html">Types of Classes</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="register.html">Register</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			
+			<div class="page-content">
+				<div class="left-nav">
+					<h2>Classes</h2>
+					<ul class="nav">
+						<li><a href="classes.html">Types of Classes</a></li>
+						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="register.html" class="active">Register</a></li>
+					</ul>
+				</div>
+				
+				<form id="registerForm" action="thanks.html" method="GET" class="right-content" onsubmit="return validateAll(this)">
+					<div id="studentInfo">
+						<h3>Student Information</h3>
+						<div class="under-header">
+							<div id="name">
+								First Name <input type="text" name="firstname" value=""><br>
+								Surname <input type="text" name="surname" value="">
+							</div>
+							<div id="dateOfBirth">
+								<h4>Date of Birth </h4>
+								DD <input type="number" name="dayBirth" min="1" max="31">
+								MM <input type="number" name="monthBirth" min="1" max="12">
+								YYYY <input type="number" name="yearBirth" min="1000" max="9999"> <br>
+							</div>
+							<p>
+								Phone Number <input type="text" name="phone" value=""><br>
+								Email <input type="text" name="email" value=""><br>
+							</p>
+							<p id="specialNeeds">
+								Special Needs <br>
+								<textarea rows="4" cols="37"></textarea>
+							</p>
+						</div>
+					</div>
+					<div id="classInfo">
+						<h3>Class Information</h3>
+						<div class="under-header">
+							<div id="typeOfClass">
+								<h4>Type of class</h4>
+								<div class="radio-group under-header">
+									<label><input type="radio" name="typeofclass" value="group" onchange="updatePrice()" checked> Group</label><br>
+									<label><input type="radio" name="typeofclass" value="individual" onchange="updatePrice()"> Individual</label>
+								</div>
+							</div>
+							<h4>Level</h4>
+							<div class="radio-group under-header">
+								<label><input type="radio" name="level" value="beginner" checked> Beginner</label> <br>
+								<label><input type="radio" name="level" value="intermediate"> Intermediate</label> <br>
+								<label><input type="radio" name="level" value="expert"> Expert</label>
+							</div>
+						</div>
+						<br>
+					</div>
+					<div id="paymentInfo">
+						<h3>Payment Information</h3>
+						<div class="under-header">
+							<h4>Pay per</h4>
+							<div class="radio-group under-header">
+								<label><input type="radio" name="paymentTime" value="perClass" onchange="updatePrice()" checked>Class</label><br>
+								<label><input type="radio" name="paymentTime" value="perMonth" onchange="updatePrice()">Month</label>
+							</div>
+							<p><strong>Total Price: &euro;<label id="totalPrice">15</label></strong></p>
+							<div class="radio-group under-header">
+								<label><input type="radio" id="payOnlineRadio" name="payment" value="online" onchange="toggleCardInfo(this.checked)" checked> Pay Online</label><br>
+								<label><input type="radio" name="payment" value="inperson" onchange="toggleCardInfo(!this.checked)"> Pay In Person</label><br>
+							</div>
+							<div id="cardInfo">
+								<h4>Type of Card</h4>
+								<div class="radio-group under-header">
+									<label><input type="radio" name="cardtype" value="visa" checked> Visa</label> <br>
+									<label><input type="radio" name="cardtype" value="mastercard"> Mastercard</label> <br>
+									<label><input type="radio" name="cardtype" value="americanexpress"> American Express</label> <br>
+								</div>
+								<p>
+									Card Number <input type="text" name="cardnumber"> <br>
+								</p>
+								<h4>Expiration Date</h4>
+								MM <input type="number" name="monthExp" min="1" max="12">
+								YYYY <input type="number" name="yearExp" min="1000" max="9999"> <br>
+								Security Code <input id="secCode" type="text" name="securitycode" maxlength="3">
+							</div>	
+						</div>
+						<input id="registerBtn" type="submit" name="submit" value="Register">
+					</div>
+				</form>
+			</div>
+			
+			<footer>
+				Royal Ballroom, Suite 301, Millin Road, Dublin 5 <br>
+				Copyright &copy; Royal Ballroom. All rights reserved.
+			</footer>
+		</div>
+	</body>
+</html>
